@@ -33,7 +33,7 @@ const GTM_EVENT = modalAlert.dataset.gtmEvent || 'pageview';
 const ignoredPaths = modalAlert.dataset.ignoredPaths || null;
 
 initialize();
-
+// Hi
 function initialize() {
 
     const ignoredPathsArray = ignoredPaths ? ignoredPaths.split(',').map(ignoredPath => ignoredPath.trim()) : [];
