@@ -28,5 +28,5 @@ export function setCookie(key, expireDays, value) {
         expires = date.toUTCString();
     }
 
-    document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}${expires ? `; expires=${expires}` : ''}; path=/`;
+    document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}${expires ? `; expires=${expires}` : ''};secure;sameSite=none; path=/`;
 }
